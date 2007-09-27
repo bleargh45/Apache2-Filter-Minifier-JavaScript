@@ -20,3 +20,5 @@ generated_by: Module::Build version 0.2805
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2
+configure_requires:
+  Apache::Test: 1.12
