@@ -1,5 +1,9 @@
 Revision history for Perl extension Apache2::Filter::Minifier::JavaScript.
 
+1.03    ???
+    - fixed Content-Type filtering so that it now properly handles HTTP headers
+      that have additional attributes (e.g. "charset=...")
+
 1.02    Wed Sep 26  1:25 PDT 2007
     - added Makefile.PL, so CPANPLUS testers stop failing tests because they
       don't have Module::Build installed
