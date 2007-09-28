@@ -1,5 +1,8 @@
 Revision history for Perl extension Apache2::Filter::Minifier::JavaScript.
 
+1.03_02 Thu Sep 27 21:35 PDT 2007
+    - pulled 1.03_01; uploaded wrong file to PAUSE by accident.
+
 1.03_01 Thu Sep 27 13:27 PDT 2007
     - rewrote Build.PL/Makefile.PL so they now check if you've got Apache::Test
       installed -at-configuration-time-.  If not, the build is aborted.  One
