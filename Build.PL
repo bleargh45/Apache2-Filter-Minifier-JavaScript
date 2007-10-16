@@ -51,6 +51,7 @@ $build_pkg->new(
     'requires'          => {
         'JavaScript::Minifier'  => 0,
         'mod_perl2'             => 2.0,
+        'Time::HiRes'           => 0,
         },
     # add configuration requirements both to build_requires and to META.yml,
     # until M::B supports "configure_requires" directly.

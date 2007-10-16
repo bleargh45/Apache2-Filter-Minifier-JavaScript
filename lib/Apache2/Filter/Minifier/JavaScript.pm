@@ -10,11 +10,12 @@ use Apache2::RequestUtil qw();      # $r->dir_config
 use Apache2::Log qw();              # $log->*()
 use APR::Table qw();                # dir_config->get() and headers_out->unset()
 use Apache2::Const -compile => qw(OK DECLINED);
+use Time::HiRes qw(gettimeofday tv_interval);
 use JavaScript::Minifier qw(minify);
 
 ###############################################################################
 # Version number.
-our $VERSION = '1.03';
+our $VERSION = '1.04_01';
 
 ###############################################################################
 # MIME-Types we're willing to minify.
@@ -65,7 +66,8 @@ sub handler {
 
     # if we've got JS to minify, minify it
     if ($ctx) {
-        my $min = eval { minify( input=>$ctx ) };
+        my $t_st = [gettimeofday()];
+        my $min  = eval { minify( input=>$ctx ) };
         if ($@) {
             # minification failed; log error and send original JS
             $log->error( "error minifying: $@" );
@@ -73,9 +75,10 @@ sub handler {
         }
         else {
             # minification ok; log results and send minified JS
+            my $t_dif = tv_interval($t_st);
             my $l_min = length($min);
             my $l_js  = length($ctx);
-            $log->debug( "JS minified $l_js to $l_min : URL ", $r->uri );
+            $log->debug( "JS minified $l_js to $l_min : t:$t_dif : URL ", $r->uri );
             $r->headers_out->unset( 'Content-Length' );
             $f->print( $min );
         }
