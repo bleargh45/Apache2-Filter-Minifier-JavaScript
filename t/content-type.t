@@ -26,6 +26,6 @@ content_type_missing: {
     my $body = $res->content;
     my $orig = slurp( 't/htdocs/test.js' );
 
-    ok( $res->content_type !~ m{text/javascript} );
+    ok( $res->content_type eq 'text/missing' );
     ok( t_cmp($body, $orig) );
 }
