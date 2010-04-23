@@ -1,5 +1,8 @@
 Revision history for Perl extension Apache2::Filter::Minifier::JavaScript.
 
+1.05    ???
+    - Switch to Git
+
 1.04    Mon May  5 15:17 PDT 2008
     - no changes since 1.04_02, but is a non-devel release
 
