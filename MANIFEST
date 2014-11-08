@@ -4,6 +4,7 @@ Makefile.PL
 MANIFEST
 MANIFEST.SKIP
 META.yml
+META.json
 README.txt
 lib/Apache2/Filter/Minifier/JavaScript.pm
 t/content-length.t
