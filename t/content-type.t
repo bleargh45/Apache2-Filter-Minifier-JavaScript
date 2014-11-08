@@ -7,7 +7,7 @@ use lib 't';
 use MY::slurp;
 
 # Test "Content-Type" headers
-plan tests => 3, need_lwp;
+plan tests => 2, need_lwp;
 
 # "Content-Type" with additional attributes (e.g. "charset")
 charset_minified: {
@@ -19,13 +19,11 @@ charset_minified: {
 }
 
 # Missing "Content-Type" header; should decline processing and we get the
-# un-minified version.  Apache, however, -will- set a default "Content-Type"
-# into the response.
+# un-minified version.
 content_type_missing: {
     my $res  = GET '/content-type/missing';
     my $body = $res->content;
     my $orig = slurp( 't/htdocs/test.js' );
 
-    ok( $res->content_type eq 'text/missing' );
     ok( t_cmp($body, $orig) );
 }
