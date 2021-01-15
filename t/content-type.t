@@ -4,7 +4,7 @@ use Apache::Test;
 use Apache::TestRequest;
 use Apache::TestUtil qw(t_cmp);
 use lib 't';
-use MY::slurp;
+use File::Slurp qw(slurp);
 
 # Test "Content-Type" headers
 plan tests => 2, need_lwp;
@@ -13,7 +13,6 @@ plan tests => 2, need_lwp;
 charset_minified: {
     my $body = GET_BODY '/content-type/charset';
     my $min  = slurp( 't/htdocs/minified.txt' );
-    chomp($min);
 
     ok( t_cmp($body, $min) );
 }

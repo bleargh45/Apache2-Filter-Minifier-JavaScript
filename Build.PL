@@ -57,6 +57,9 @@ $build_pkg->new(
     'recommends'        => {
         'JavaScript::Minifier::XS' => 0,
         },
+    'test_requires' => {
+        'File::Slurp' => 0,
+    },
     # add configuration requirements both to build_requires and to META.yml,
     # until M::B supports "configure_requires" directly.
     'build_requires'    => { %configure_requires },

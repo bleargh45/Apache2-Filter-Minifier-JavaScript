@@ -4,7 +4,7 @@ use Apache::Test;
 use Apache::TestRequest;
 use Apache::TestUtil qw(t_cmp);
 use lib 't';
-use MY::slurp;
+use File::Slurp qw(slurp);
 
 # Test dynamically generated content
 plan tests => 2, need_lwp;
@@ -20,6 +20,5 @@ dynamic_unaltered: {
 dynamic_minified: {
     my $body = GET_BODY '/dynamic/js';
     my $min  = slurp( 't/htdocs/minified.txt' );
-    chomp($min);
     ok( t_cmp($body, $min) );
 }

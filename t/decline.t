@@ -4,7 +4,7 @@ use Apache::Test;
 use Apache::TestRequest;
 use Apache::TestUtil qw(t_cmp);
 use lib 't';
-use MY::slurp;
+use File::Slurp qw(slurp);
 
 # Test non-JS responses still have other filters applied
 plan tests => 1, need_lwp;
