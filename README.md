@@ -1,6 +1,6 @@
 # NAME
 
-Apache2::Filter::Minifier::JavaScript - JS minifying output filter
+Apache2::Filter::Minifier::JavaScript - JavaScript minifying output filter for mod\_perl
 
 # SYNOPSIS
 
@@ -92,7 +92,7 @@ license as Perl itself.
 
 # SEE ALSO
 
-[JavaScript::Minifier](https://metacpan.org/pod/JavaScript%3A%3AMinifier),
-[JavaScript::Minifier::XS](https://metacpan.org/pod/JavaScript%3A%3AMinifier%3A%3AXS),
-[Apache2::Filter::Minifier::CSS](https://metacpan.org/pod/Apache2%3A%3AFilter%3A%3AMinifier%3A%3ACSS),
-[Apache::Clean](https://metacpan.org/pod/Apache%3A%3AClean).
+- [JavaScript::Minifier](https://metacpan.org/pod/JavaScript%3A%3AMinifier)
+- [JavaScript::Minifier::XS](https://metacpan.org/pod/JavaScript%3A%3AMinifier%3A%3AXS)
+- [Apache2::Filter::Minifier::CSS](https://metacpan.org/pod/Apache2%3A%3AFilter%3A%3AMinifier%3A%3ACSS)
+- [Apache::Clean](https://metacpan.org/pod/Apache%3A%3AClean)
