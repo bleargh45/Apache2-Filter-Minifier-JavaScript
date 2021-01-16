@@ -14,8 +14,12 @@ use Time::HiRes qw(gettimeofday tv_interval);
 
 ###############################################################################
 # Load up the JS minifier modules.
-use JavaScript::Minifier;
+use JavaScript::Minifier qw(minify);
 eval { require JavaScript::Minifier::XS; };
+
+###############################################################################
+# Keep our namespace clean.
+use namespace::clean;
 
 ###############################################################################
 # Version number.

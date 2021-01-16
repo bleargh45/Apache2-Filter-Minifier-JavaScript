@@ -6,6 +6,7 @@ requires 'Apache2::Log';
 requires 'Apache2::RequestRec';
 requires 'Apache2::RequestUtil';
 requires 'APR::Table';
+requires 'namespace::clean';
 
 recommends 'JavaScript::Minifier::XS';
 
