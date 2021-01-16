@@ -74,7 +74,7 @@ CacheEnable mem /js/
 
 - handler($filter)
 
-    JavaScript minification output filter. 
+    JavaScript minification output filter.
 
 # AUTHOR
 

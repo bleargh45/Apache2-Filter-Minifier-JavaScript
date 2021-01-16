@@ -197,7 +197,7 @@ Memory Cache
 
 =item handler($filter)
 
-JavaScript minification output filter. 
+JavaScript minification output filter.
 
 =back
 
