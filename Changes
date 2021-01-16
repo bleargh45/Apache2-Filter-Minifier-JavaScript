@@ -2,7 +2,7 @@ Revision history for Perl extension Apache2::Filter::Minifier::JavaScript.
 
 {{$NEXT}}
     - Switch to Dist::Zilla for release management
-    - POD cleanups
+    - POD cleanups; spelling
     - Namespace cleaned
 
 1.06    Fri Nov  7 17:05 PST 2014

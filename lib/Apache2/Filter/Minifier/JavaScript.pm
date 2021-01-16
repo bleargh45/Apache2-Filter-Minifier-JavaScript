@@ -129,9 +129,11 @@ sub handler {
 
 1;
 
+=for stopwords PerlVar minified minifier minification minifies minifying
+
 =head1 NAME
 
-Apache2::Filter::Minifier::JavaScript - JS minifying output filter
+Apache2::Filter::Minifier::JavaScript - JavaScript minifying output filter for mod_perl
 
 =head1 SYNOPSIS
 
