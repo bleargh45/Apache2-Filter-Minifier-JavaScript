@@ -12,4 +12,5 @@ recommends 'JavaScript::Minifier::XS';
 
 test_requires 'Apache::Test', '>= 1.12';
 test_requires 'File::Slurp';
+test_requires 'LWP::UserAgent';
 test_requires 'Test::More', '>= 0.96';
