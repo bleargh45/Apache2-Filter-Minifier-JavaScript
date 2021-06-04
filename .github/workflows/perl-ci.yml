@@ -4,7 +4,7 @@ name: CI
 on: [push]
 
 env:
-  APACHE_RELEASE: http://archive.apache.org/dist/httpd/httpd-2.4.46.tar.gz
+  APACHE_RELEASE: http://archive.apache.org/dist/httpd/httpd-2.4.48.tar.gz
   MODPERL_RELEASE: http://www.cpan.org/authors/id/S/SH/SHAY/mod_perl-2.0.11.tar.gz
 
 jobs:
