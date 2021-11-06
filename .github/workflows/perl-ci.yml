@@ -22,6 +22,9 @@ jobs:
           apt-get install -y sudo
           adduser --uid 1001 github
 
+      - name: Perl version
+        run: perl -V
+
       - name: Build Apache
         run: |
           apt-get install -y libapr1 libapr1-dev libaprutil1 libaprutil1-dev
