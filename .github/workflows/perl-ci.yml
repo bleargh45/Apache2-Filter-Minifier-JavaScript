@@ -13,8 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     container:
-      #image: perldocker/perl-tester:latest
-      image: perldocker/perl-tester:5.32
+      image: perldocker/perl-tester:latest
 
     steps:
       - name: Setup GitHub user
@@ -92,7 +91,7 @@ jobs:
     strategy:
       matrix:
         perl-version:
-          #- "latest"
+          - "latest"
           - "5.32"
           - "5.30"
           - "5.28"
