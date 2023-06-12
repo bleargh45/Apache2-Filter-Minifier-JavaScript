@@ -110,7 +110,7 @@ jobs:
           - "5.22"
 
     container:
-      image: perl:${{ matrix.perl-version }}
+      image: perldocker/perl-tester:${{ matrix.perl-version }}
 
     steps:
       - name: Setup GitHub user
