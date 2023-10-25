@@ -13,7 +13,7 @@ on:
 
 env:
   APACHE_RELEASE: http://archive.apache.org/dist/httpd/httpd-2.4.57.tar.gz
-  MODPERL_RELEASE: http://www.cpan.org/authors/id/S/SH/SHAY/mod_perl-2.0.12.tar.gz
+  MODPERL_RELEASE: http://www.cpan.org/authors/id/S/SH/SHAY/mod_perl-2.0.13.tar.gz
 
 jobs:
   build:
