@@ -12,7 +12,7 @@ on:
     - cron: "15 6 * * 0"  # Once weekly, on Sundays
 
 env:
-  APACHE_RELEASE: http://archive.apache.org/dist/httpd/httpd-2.4.57.tar.gz
+  APACHE_RELEASE: http://archive.apache.org/dist/httpd/httpd-2.4.58.tar.gz
   MODPERL_RELEASE: http://www.cpan.org/authors/id/S/SH/SHAY/mod_perl-2.0.13.tar.gz
 
 jobs:
